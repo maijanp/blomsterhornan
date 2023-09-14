@@ -20,6 +20,7 @@
     padding: 1em;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 #iconContainer{
@@ -31,7 +32,12 @@
 }
 
 .dropdown-content{
+    text-align: right;
 	display: none;
+} 
+
+.dropdown-content a{
+    margin-top: 0.5em;
 } 
 
 #hamburger{
@@ -43,11 +49,13 @@ input[type=checkbox]:checked ~ .dropdown-content {
 	flex-direction: column;
 }
 
-.logo{
+
+.logo-container{
     width: 35%;
 }
 
-.logo img{
+.logo-container img{
+    padding: 0.5em;
     width: 100%;
 }
 
@@ -56,6 +64,7 @@ nav {
     background-color: var(--ashgrey);
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     position: sticky;
     top: 0;
     z-index: 1;
