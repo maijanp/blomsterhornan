@@ -11,7 +11,7 @@
 }
 
 .container{
-    background-color: yellow;
+    /* background-color: yellow; */
     margin: 0 auto;
     display: flex; 
     flex-direction: column; 
@@ -52,30 +52,26 @@ nav {
     background-color: var(--ashgrey);
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1;
 }
 
-#hero-container{
+/* #hero-container{
     height: 200px;
     width: 100%;
     background-image: url(../Images/MicrosoftTeams-imageHero.png);
     background-size:cover ;
-    position: relative;
-    top: 50px;
-    
-}
-#hero-background-container{
-    width: 100%;
-}
+    position: relative;  
+} */
+
 #hero-background-container img{
     width: 100%;
 }
 
 main {
     background-color: var(--seashell);
-    height: 1000px;
+    height: 500px;
 }
 
 
@@ -88,11 +84,8 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;  
-    
 }
   
-
-
 	Large desktop screen
     @media (min-width: 1250px) {
         #hamburger, label{
