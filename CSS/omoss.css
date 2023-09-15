@@ -1,39 +1,74 @@
-#omoss-container{
+#about-us-container{
     display: grid;
     grid-template-columns: auto;
-  
-    margin: top 50px;
+    padding-top: 20px;
+    
     background-color: white;
     margin: 20px;
     box-shadow: -3px 3px #bdb6b6;
 }
 
-h1{
+/* h1{
     text-align: left;
-    margin-left: 30px;
+    margin-left: 15px;
     font-size: 35px;
     margin-bottom: 10px;
     color: var(--dark-green);
     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
-}
+} */
 
-.omoss-text{
-    padding: 12px;
+.about-us-text{
+    padding: 19px;
     padding-top: 0;
+    margin-left: 12px;
 
     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
     
 }
 
-.image-om-oss{ 
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-          
+
+.image-about-us{
+   margin: 0 auto;
+   margin-bottom: 70px;
+
 }
 
-.img-om-oss-flower{
-    align-items: center;
+
+@media screen and (min-width: 480px){
+
+#about-us-container{
+
+    width: 95%;
+    
 }
 
+.image-about-us{
+   align-self: center;
+   align-content: center;
+   width: 500px;
+   margin-bottom: 70px;
+
+ 
+ }
+/* .image-about-us{
+    display: flex;
+    flex-direction: column;
+
+   
+   
+    
+ 
+ } */
+
+/* .image-about-us{
+
+    justify-self: right ;
+}
+} */
+
+
+@media screen and (min-width:768px) {
+
+}
+    
 
