@@ -20,7 +20,15 @@ h1{
 .omoss-text{
     padding: 30px;
     padding-top: 0;
-    text-size: 90px;
+
     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
     
 }
+
+.image-om-oss{ 
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+      
+}
+
