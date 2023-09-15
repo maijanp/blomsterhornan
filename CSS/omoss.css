@@ -13,7 +13,7 @@ h1{
     margin-left: 30px;
     font-size: 65px;
     margin-bottom: 20px;
-    color: #053b00;;
+    color: var(--dark-green);
     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
 }
 
