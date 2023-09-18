@@ -21,10 +21,13 @@ body {
     width: 90%;
 }
 
+/* Navbar styling*/
+
 #menu-container{
     padding: 1em;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 #iconContainer{
@@ -36,7 +39,12 @@ body {
 }
 
 .dropdown-content{
+    text-align: right;
 	display: none;
+} 
+
+.dropdown-content a{
+    margin-top: 0.5em;
 } 
 
 #hamburger{
@@ -65,9 +73,13 @@ header {
 .logo {
     width: 35%;
     margin: 5px;
+
+.nav-logo-container{
+    width: 30%;
+    padding: 0.5em;
 }
 
-.logo img{
+.nav-logo-container img{
     width: 100%;
 }
 
@@ -76,6 +88,7 @@ nav {
     background-color: var(--ashgrey);
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -85,9 +98,14 @@ nav a{
     text-decoration: none;
     color: white;
 }
+/*End of navbar styling*/
 
+/*Hero/header styling*/
 #hero-container{
-    height: 200px;
+
+    position: relative;
+    display: block;
+    height: fit-content;
     width: 100%;
 }
 
@@ -96,11 +114,32 @@ nav a{
 }
 
 #hero-background-container img{
+  width: 100%;
+}
+
+#hero-container img{
     width: 100%;
 }
 
+#headline-container{
+    background-color: rgba(255, 255, 255, 0.965);
+    border-radius: 100%;
+    padding: 1em;
+    position: absolute;
+    top: 18%;
+    left: 23%;
+    width: 45%;
+}
+
+#logo-container img{
+    width: 100%;
+}
+
+/*End of hero/header styling*/
+
 main {
     background-color: var(--seashell);
+    min-height: 500px;
 }
 
 
