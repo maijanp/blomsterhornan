@@ -10,6 +10,7 @@
     
 }
 
+
 .container{
     margin: 0 auto;
     display: flex; 
@@ -54,10 +55,10 @@ input[type=checkbox]:checked ~ .dropdown-content {
 
 .nav-logo-container{
     width: 30%;
+    padding: 0.5em;
 }
 
 .nav-logo-container img{
-    padding: 0.5em;
     width: 100%;
 }
 
@@ -80,6 +81,7 @@ nav a{
 
 /*Hero/header styling*/
 #hero-container{
+
     position: relative;
     display: block;
     height: fit-content;
@@ -89,7 +91,7 @@ nav a{
     width: 100%;
 }
 
-#logo-container{
+#headline-container{
     background-color: rgba(255, 255, 255, 0.965);
     border-radius: 100%;
     padding: 1em;
