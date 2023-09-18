@@ -10,12 +10,17 @@
     
 }
 
+body {
+    margin: 0;
+}
+
 .container{
     margin: 0 auto;
     display: flex; 
     flex-direction: column; 
     width: 90%;
 }
+
 #menu-container{
     padding: 1em;
     display: flex;
@@ -43,8 +48,23 @@ input[type=checkbox]:checked ~ .dropdown-content {
 	flex-direction: column;
 }
 
-.logo{
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rubrik {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    color: var(--dark-green);
+}
+
+.logo {
     width: 35%;
+    margin: 5px;
 }
 
 .logo img{
@@ -70,9 +90,11 @@ nav a{
     height: 200px;
     width: 100%;
 }
+
 #hero-background-container{
     width: 100%;
 }
+
 #hero-background-container img{
     width: 100%;
 }
@@ -91,29 +113,73 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;  
-    
 }
-  
+
+.footer-content {
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+    nav {
+        height: 10vh;
+    }
+
+    .logo img{
+        height: 100%;
+        width: auto;
+        padding-left: 5vw;
+    }
+
+    footer {
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .footer-content {
+        text-align: left;
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        width: 80%;
+    }
+    
+    nav {
+        height: 10vh;
+    }
+
+    .logo img{
+        height: 100%;
+        width: auto;
+        padding-left: 5vw;
+    }
+
+    #iconContainer{
+        display: none;
+    }
+
+    #hamburger {
+        display: none;
+    }
+    
+    .dropdown-content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    #menu-container {
+        width: 55%;
+    }
 
 
-	/* Large desktop screen */
-    @media (min-width: 1250px) {
-        #hamburger, label{
-            display: none;
-        }
-    
-        .dropdown-content{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-    
+}
       
-    
-        input[type=checkbox]:checked ~ .dropdown-content {
-            display: flex;
-            flex-direction: row;
-        }
-      }
 
-      
