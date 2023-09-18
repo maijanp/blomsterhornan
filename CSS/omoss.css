@@ -1,18 +1,20 @@
 main{
-    height:1000px;
+    height:750px;
 }
 
 #about-us-container{
+    width: 90%;
     display: grid;
     grid-template-columns: auto;
     padding-top: 40px;
+    
     
     background-color: white;
     margin: 20px;
     box-shadow: -3px 3px #bdb6b6;
 }
 
-.om-oss{
+/* .om-oss{
     position: absolute;
    
     background-color: white;
@@ -25,7 +27,7 @@ main{
 
     color: #94a684;
     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
-} 
+}  */
 
 .about-us-text{
     padding: 19px;
@@ -38,17 +40,23 @@ main{
 
 .image-about-us{
    margin: 0 auto;
-   margin-top: 0px;
+   margin-top: 20px;
    margin-bottom: 40px;
    width: 250px;
+   border-radius: 5px;
 }
 
+footer{
+    text-align: center;
+    font-size: 12px;
 
-
-@media screen and (min-width: 480px) {
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;   
+  
+}
+@media screen and (max-width: 480px) {
 
 .container{
-    width: 85%;
+    width: 90%;
 }
 
 main{
@@ -56,29 +64,32 @@ main{
 }
 
 #about-us-container{
+    width: 95%;
+    display: flex;
 
-    width: 90%;
+;
     margin: 0 auto;
     margin-top: 70px;
-    margin-bottom: 50px;
 }
 
 .about-us-text{
-    margin-top: 0px;    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 0px;  
+    margin-left: 0px;  
 }
 
-.om-oss{
+/* .om-oss{
     
     padding: 40px;
     margin: 25px;
     margin-left: 280px;
     margin-top: 50px;
-} 
+}  */
 
 .image-about-us{
+    
    align-self: center;
-   align-content: center;
-   width: 500px;
    margin-bottom: 70px;
  
  }
@@ -88,7 +99,7 @@ main{
 
 }
 
-
+}
 @media screen and (min-width:768px) {
 
 .om-oss{
@@ -100,35 +111,40 @@ main{
 }
 
 main{
-    height: 595px;
+    height: 1500px;
 }
 
 #about-us-container{
     display: grid;
-    grid-template-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    width: 96%;
-    padding-top: 40px;
-    margin-bottom: 0px;
+
+    width: 95%;
+    margin-top: 100px;
+    
+    margin-bottom: 100px;
     
     background-color: white;
     box-shadow: -3px 3px #bdb6b6;
 }
 
 .about-us-text{
-    grid-column: 1fr;
+    grid-column-start: 1;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .image-about-us{
-    grid-column: 1fr;
-    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    padding-right: 10px;
     margin-top:10px;
-    width: 350px;
+    width: 700px;
 }
 
 footer{
-    margin-top: 0px;
+    font-size: 30px;
 }
-}
+
 }
