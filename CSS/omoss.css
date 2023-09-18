@@ -32,8 +32,7 @@ main{
     padding-top: 0;
     margin-left: 12px;
     margin-bottom: -15px;
-    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
-    
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;   
 }
 
 
@@ -42,7 +41,6 @@ main{
    margin-top: 0px;
    margin-bottom: 40px;
    width: 250px;
-
 }
 
 
@@ -52,9 +50,9 @@ main{
 .container{
     width: 85%;
 }
+
 main{
     height: 890px;
-    
 }
 
 #about-us-container{
@@ -63,7 +61,6 @@ main{
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 50px;
-   
 }
 
 .about-us-text{
@@ -76,7 +73,6 @@ main{
     margin: 25px;
     margin-left: 280px;
     margin-top: 50px;
-  
 } 
 
 .image-about-us{
@@ -93,7 +89,7 @@ main{
 }
 
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:768px) {
 
 .om-oss{
     
@@ -102,6 +98,7 @@ main{
     margin-left: 460px;
     margin-top: 45px;
 }
+
 main{
     height: 595px;
 }
@@ -118,11 +115,9 @@ main{
     box-shadow: -3px 3px #bdb6b6;
 }
 
-
 .about-us-text{
     grid-column: 1fr;
     margin-bottom: 20px;
-   
 }
 
 .image-about-us{
