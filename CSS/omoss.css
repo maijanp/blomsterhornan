@@ -93,10 +93,11 @@ footer{
 @media screen and (min-width: 1025px) {
 
     main{
-        height:650px;  
+        height:1500px;  
     }
 
     #about-us-container{
+        width: 85%;
         display: grid;
         grid-template-columns: auto 1fr auto;
         row-gap: 20px;
