@@ -102,65 +102,6 @@ main{
     margin-left: 460px;
     margin-top: 45px;
 }
-
-nav {
-    width: 100%;
-    background-color: var(--ashgrey);
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    height: 200px;
-}
-
-.logo{
-    width: 20%;
-    align-self: center;
-    margin-left: 10px;
-}
-
-.dropdown-content{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} 
-
-#menu-container {
-    width: 75%;
-    justify-content: flex-end;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding:5px;
-    
-}
-
-a:hover {
-    background-color: #94a684;
-    
-  }
-
-#hamburger, label{
-    display: none;
-}
-
-.dropdown-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-
-input[type=checkbox]:checked ~ .dropdown-content {
-    display: flex;
-    flex-direction: row;
-}
-
 main{
     height: 595px;
 }
@@ -178,13 +119,11 @@ main{
 }
 
 
-
 .about-us-text{
     grid-column: 1fr;
     margin-bottom: 20px;
    
 }
-
 
 .image-about-us{
     grid-column: 1fr;
