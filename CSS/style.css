@@ -5,15 +5,21 @@
     --ashgrey: #AEC3AE;
     --middle-green: #94A684;
     --white: #ffffff;
-
-    /* Text color */
     --dark-green: #053b00;
-
+    
 }
+
+/* 
+Referenser till externa fonts
+font-family: 'Autour One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
 
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 .container {
     margin: 0 auto;
@@ -86,6 +92,8 @@ input[type=checkbox]:checked~.dropdown-list
 }
 
 header {
+    font-family: 'Autour One', cursive;
+    color: var(--dark-green);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,6 +169,7 @@ nav a {
     background-color: rgba(255, 255, 255, 0.965);
     border-radius: 100%;
     padding: 1em;
+    text-align: center;
     position: absolute;
     top: 18%;
     left: 23%;
