@@ -1,7 +1,7 @@
 /* mobile first */
 
 main{
-    height:850px;   
+    height:800px;   
 }
 
 #about-us-container{
@@ -10,12 +10,10 @@ main{
     width: 90%;
     
     padding-top: 30px;
-    margin: 50px;
+    margin: 40px auto;
 
-    
-    background-color: white;
-  
-    box-shadow: -3px 3px #bdb6b6;
+    background-color: var(--light-green);
+   
 }
 
 /* .om-oss{
@@ -36,10 +34,10 @@ main{
 
 /* Om oss sektionen */
 .about-us-text{
-    padding: 19px;
+    padding: 10px;
     padding-top: 0;
     margin-left: 12px;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;   
 }
 
@@ -47,9 +45,9 @@ main{
 .image-about-us{
    margin: 0 auto;
    margin-top: 20px;
-   margin-bottom: 40px;
+  margin-bottom: 15px;
    width: 250px;
-   border-radius: 5px;
+ 
 }
 
 
@@ -61,99 +59,56 @@ footer{
     font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;   
   
 }
-@media screen and (max-width: 700px) {
 
+/* Tablets */
+@media screen and (min-width: 480px) {
 
-main{
-    height: 1200px;
-}
-
-#about-us-container{
-    display: flex;
-    flex-direction: column;
+    main{
+        height:750px;  
+    }
     
-   
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 70px;
+    .image-about-us{
+        width: 300px;
+     }
 }
 
-.about-us-text{
-    margin-top: 0px;  
-    margin-left: 0px;  
 
-}
-
-/* .om-oss{
+/* landscape tablets */
+@media screen and (min-width: 768px) {
     
-    padding: 40px;
-    margin: 25px;
-    margin-left: 280px;
-    margin-top: 50px;
-}  */
+    #about-us-container{
+        display: flex;
+        flex-direction: column;
 
-.image-about-us{
-    display: flex;  
-    align-self: center;
-
-    width: 300px;
-
- } 
-
- footer{
-     margin-top: 30px;
-
+        margin-top: 50px;
+    }
+    .image-about-us{
+        width: 400px;
+        margin-bottom: 30px;
+     }
 }
 
-}
-/* large desktopscreens */
-@media (min-width: 810px) {
-.container{
-    width: 70%;
-}
-/* .om-oss{
+
+/*  Desktops */
+@media screen and (min-width: 1025px) {
+
+    main{
+        height:650px;  
+    }
+
+    #about-us-container{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        row-gap: 20px;
+
+        padding: 30px;
     
-    padding: 45px;
-    margin: 25px;
-    margin-left: 460px;
-    margin-top: 45px;
-} */
-
-main{
-    height: 1200px;
+}
+    .image-about-us{
+        margin-top: 40px;
+    }
 }
 
-#about-us-container{
-   
-    flex-direction: column;
-    margin: 0 auto;
-    width: 90%;
-    margin-top: 100px;
+
+
     
-    margin-bottom: 100px;
-    
-    background-color: white;
-    box-shadow: -3px 3px #bdb6b6;
-}
-
-.about-us-text{
-    margin-bottom: 20px;
-    font-size: 30px;
-    align-self: flex-end;
-   
-}
-
-.image-about-us{
-
-    padding-right: 10px;
-    margin-top:10px;
-    width: 800px;
-    margin-bottom: 60px;
- 
-}
-
-footer{
-    font-size: 30px;
-}
-
-}
