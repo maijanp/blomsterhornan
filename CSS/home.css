@@ -91,9 +91,11 @@ header {
     height: 200px;
     width: 100%;
 }
+
 #hero-background-container{
     width: 100%;
 }
+
 #hero-background-container img{
     width: 100%;
 }
@@ -101,6 +103,8 @@ header {
 main {
     background-color: var(--seashell);
 }
+
+/* --------------------------------------------- */
 
 h3 {
     padding-left: 10px;
@@ -120,6 +124,8 @@ h3 {
     width: 100%;
     border-radius: 10px;
 }
+
+/* ------------------------------------------ */
 
 footer {
     height: auto;
@@ -155,6 +161,8 @@ footer {
         justify-content: space-between;
     }
 
+    /* ------------------------------------------ */
+
     #greeting {
         width: 100%;
     }
@@ -170,6 +178,8 @@ footer {
         margin-top: 0;
         align-self: center;
     }
+
+    /* ------------------------------------------ */
 
     footer {
         justify-content: center;
