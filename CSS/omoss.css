@@ -1,7 +1,7 @@
 /* mobile first */
 
 main{
-    height:800px;   
+    height:825px;   
 }
 
 #about-us-container{
@@ -13,7 +13,7 @@ main{
     margin: 40px auto;
 
     background-color: var(--light-green);
-   
+    box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
 }
 
 /* Om oss sektionen */
@@ -29,8 +29,10 @@ main{
 .image-about-us{
    margin: 0 auto;
    margin-top: 20px;
-  margin-bottom: 15px;
+    margin-bottom: 15px;
    width: 250px;
+
+   border-radius: 10px;
  
 }
 
@@ -48,7 +50,7 @@ footer{
 @media screen and (min-width: 480px) {
 
     main{
-        height:750px;  
+        height:700px;  
     }
     
     .image-about-us{
@@ -81,16 +83,26 @@ footer{
     }
 
     #about-us-container{
-        width: 85%;
+        width: 80%;
+        min-height: 400px;
+
         display: grid;
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: 1fr 100px 1fr;
         row-gap: 20px;
+        justify-self: center;
 
         padding: 30px;
     
-}
+    }
     .image-about-us{
-        margin-top: 40px;
+        margin-top: 50px;
+        grid-column-start: 3;
+        width: 100%;
+
+    }
+
+    .about-us-text{
+        padding:27px;
     }
 }
 
