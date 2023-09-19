@@ -64,6 +64,7 @@ h3 {
         background-color: var(--light-green);
         border-radius: 10px;
         box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
+        height: fit-content;
     }
     
     .interior-container {
