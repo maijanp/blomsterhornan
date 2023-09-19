@@ -32,19 +32,11 @@ main{
     margin-bottom: 15px;
    width: 250px;
 
+   box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
    border-radius: 10px;
  
 }
 
-
-/* footer */
-/* footer{
-    text-align: center;
-    font-size: 12px;
-
-    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;   
-  
-} */
 
 /* Tablets */
 @media screen and (min-width: 480px) {
@@ -81,7 +73,7 @@ main{
 @media screen and (min-width: 1025px) {
 
     main{
-        height:750px;  
+        height:700px;  
     }
 
     #about-us-container{
