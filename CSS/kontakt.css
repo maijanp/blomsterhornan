@@ -1,0 +1,23 @@
+
+.grid-container {
+    display: flex;
+}
+section {
+    border:solid 1px black;
+    width:100%;
+    display: block;
+}
+.form_row{
+    border:solid 1px red;
+    display: flex;
+}
+input {
+    display: flex;
+    width: 50%;
+    border-radius: 5px;
+}
+@media screen and (min-width: 480px) {
+    section {
+        width:50%;
+    }
+}
