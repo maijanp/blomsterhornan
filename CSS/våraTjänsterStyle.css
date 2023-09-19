@@ -1,6 +1,7 @@
-
-
 /* VÅRA TJÄNSTER */
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
 
 .grid-container {
     display: grid;
@@ -13,6 +14,9 @@
     background-color: var(--ashgrey);
     margin: 20px auto;
     width: 80%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px -3px rgba(120, 119, 119, 0.28);
+
 }
 
 .text {
@@ -30,25 +34,43 @@
     margin: 20px 10px;
 }
 
+.link-contact a {
+    text-decoration: none;
+    color: var(--dark-green);
+    text-decoration: underline;
+}
+
+.link-contact a:hover {
+    font-weight: bold;
+}
 
 
-@media only screen and (min-width:810px){
-   .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-    
-   }
 
-   .grid-wedding {
-    grid-column-start: 1;
-   }
+@media only screen and (min-width:810px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
 
-   .grid-funeral {
-    grid-column-start: 2;
-   }
+    }
 
-   .grid-floralArrangement {
-    grid-column-start: 3;
-   }
+    .grid-wedding {
+        grid-column-start: 1;
+    }
+
+    .grid-funeral {
+        grid-column-start: 2;
+    }
+
+    .grid-floralArrangement {
+        grid-column-start: 3;
+    }
+}
+
+@media only screen and (min-width:806px) and (max-width:975px) {
+
+    main h3 {
+        font-size: 14px;
+    }
+
 }
 
 /* Large desktop screen */
