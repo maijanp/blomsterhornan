@@ -37,6 +37,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1;
+  font-weight: bold;
 }
 
 nav a {
@@ -97,12 +98,22 @@ input[type=checkbox]:checked~.dropdown-list
 }
 
 .dropdown-content {
+  
   text-align: right;
   display: none;
 }
 
 .dropdown-content a {
   margin-top: 0.5em;
+}
+
+.dropdown-content a:hover {
+  color: #505e46;
+  transition: 0.8s;
+}
+
+.active{
+  color:var(--middle-green);
 }
 
 /* ------------------------------HEADER-------------------------------------- */
@@ -266,10 +277,18 @@ footer {
         align-items: center; */
     display: none;
   }
+
+  input[type=checkbox]:checked~.dropdown-list
+ {
+  display: none;
+}
+
+ 
 }
 
 @media screen and (min-width: 1200px) {
   .container{
     width: 70%;
   }
+
 }
