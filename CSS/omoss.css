@@ -42,7 +42,7 @@ main{
 @media screen and (min-width: 480px) {
 
     main{
-        height:700px;  
+        height:750px;  
     }
     
     .image-about-us{
@@ -73,7 +73,7 @@ main{
 @media screen and (min-width: 1025px) {
 
     main{
-        height:700px;  
+        height:800px;  
     }
 
     #about-us-container{
