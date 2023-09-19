@@ -30,8 +30,6 @@
     margin: 20px 10px;
 }
 
-
-
 @media only screen and (min-width:810px){
    .grid-container {
     grid-template-columns: repeat(3, 1fr);
@@ -64,9 +62,7 @@
         flex-direction: row;
         justify-content: space-evenly;
     }
-
-
-
+    
     input[type=checkbox]:checked~.dropdown-content {
         display: flex;
         flex-direction: row;
