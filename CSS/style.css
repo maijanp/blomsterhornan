@@ -109,12 +109,13 @@ input[type=checkbox]:checked~.dropdown-list
 
 .dropdown-content a:hover {
   color: #505e46;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .active{
   color:var(--middle-green);
 }
+
 /* ------------------------------HEADER-------------------------------------- */
 
 header {
