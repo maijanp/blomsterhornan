@@ -1,0 +1,111 @@
+/* mobile first */
+
+main{
+    height:825px;   
+}
+
+#about-us-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+    padding-top: 30px;
+    margin: 40px auto;
+
+    background-color: var(--light-green);
+    box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
+}
+
+/* Om oss sektionen */
+.about-us-text{
+    padding: 10px;
+    padding-top: 0;
+    margin-left: 12px;
+    margin-bottom: -10px;
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;   
+}
+
+
+.image-about-us{
+   margin: 0 auto;
+   margin-top: 20px;
+    margin-bottom: 15px;
+   width: 250px;
+
+   border-radius: 10px;
+ 
+}
+
+
+/* footer */
+footer{
+    text-align: center;
+    font-size: 12px;
+
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;   
+  
+}
+
+/* Tablets */
+@media screen and (min-width: 480px) {
+
+    main{
+        height:700px;  
+    }
+    
+    .image-about-us{
+        width: 300px;
+     }
+}
+
+
+/* landscape tablets */
+@media screen and (min-width: 768px) {
+    
+    #about-us-container{
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 50px;
+    }
+    .image-about-us{
+        width: 400px;
+        margin-bottom: 30px;
+     }
+}
+
+
+/*  Desktops */
+@media screen and (min-width: 1025px) {
+
+    main{
+        height:1500px;  
+    }
+
+    #about-us-container{
+        width: 80%;
+        min-height: 400px;
+
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        row-gap: 20px;
+        justify-self: center;
+
+        padding: 30px;
+    
+    }
+    .image-about-us{
+        margin-top: 50px;
+        grid-column-start: 3;
+        width: 100%;
+
+    }
+
+    .about-us-text{
+        padding:27px;
+    }
+}
+
+
+
+    
