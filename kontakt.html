@@ -1,100 +1,112 @@
-<!DOCTYPE html>
-<html lang="sv">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blomsterhörnan</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/kontakt.css">
-</head>
-
-<body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/kontakt.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Autour+One&family=Raleway:wght@300;400&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <nav>
-            <div class="nav-logo-container">
-                <img src="./Images/BlomsterhörnanLogo.png" alt="">
+      <nav>
+        <div class="nav-logo-container">
+          <img src="./Images/BlomsterhörnanLogo.png" alt="" />
+        </div>
+        <div id="menu-container">
+          <input type="checkbox" name="" id="hamburger" />
+          <label for="hamburger">
+            <div id="iconContainer">
+              <img src="./Images/hamburgericon.png" srcset="" />
             </div>
-            <div id="menu-container">
-                <input type="checkbox" name="" id="hamburger" />
-                <label for="hamburger">
-                    <div id="iconContainer">
-                        <img src="./Images/hamburgericon.png" srcset="" />
-                    </div>
-                </label>
-                <div class="dropdown-content">
-                    <a href="">Hem</a>
-                    <a href="">Om oss</a>
-                    <a href="/gallery.html">Galleri</a>
-                    <a href="">Våra tjänster</a>
-                    <a href="">Kontakt</a>
-                </div>
-            </div>
-        </nav>
-        <header>
-            <h2 id="rubrik">Blomsterhörnan</h2>
-            <div id="hero-container">
-                <div id="hero-background-container"><img src="./Images/MicrosoftTeams-imageHero.png" alt=""></div>
-            </div>
-        </header>
-        <main>
+          </label>
+          <ul class="dropdown-list">
+            <li>
+              <a href="/index.html">Hem</a>
+            </li>
+            <li>
+              <a href="/omoss.html">Om oss</a>
+            </li>
+            <li>
+              <a href="/gallery.html">Galleri</a>
+            </li>
+            <li>
+              <a href="/varatjanster.html">Våra tjänster</a>
+            </li>
+            <li>
+              <a href="">Kontakt</a>
+            </li>
+          </ul>
+          <div class="dropdown-content">
+            <a href="/index.html">Hem</a>
+            <a href="/omoss.html">Om oss</a>
+            <a href="/gallery.html">Galleri</a>
+            <a href="/varatjanster.html">Våra tjänster</a>
+            <a href="">Kontakt</a>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div id="hero-background-container">
+          <img src="./Images/MicrosoftTeams-imageHero.png" alt="" />
+        </div>
+        <div id="headline-container"><h2>Kontakt</h2></div>
+      </header>
+      <main>
             <div class="contact-container">
                 <section>
                     <h4>
                     Blomsterhörnan
                     </h4>
-                    <p>
+                    <p class="main-text">
                     Kvilletorget 16<br>
                     417 04 Göteborg
                 </p>
-                <p>
+                <p class="main-text">
                     info@blomsterhornan.se<br>
                     Telefon: 031-22 12 00
                 </p>
                     <div class="map">
-                        <iframe src="https://maps.google.com/maps?key=AIzaSyC19kbt5nzq9KiH7IbnIwVKsnJcqf35NNc?width=100%25&amp;height=600&amp;hl=en&amp;q=Kvilletorget%2016+(Blomsterh%C3%B6rnan)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Calculate population in area</a></iframe>
+                        <iframe src="https://maps.google.com/maps?key=AIzaSyC19kbt5nzq9KiH7IbnIwVKsnJcqf35NNc?amp;hl=en&amp;q=Kvilletorget%2016+(Blomsterh%C3%B6rnan)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Calculate population in area</a></iframe>
                     </div>
                 </section>
 
-               <section>
-                    <form method="post" action="">
-                        <div class="form_row">
-                            <div class="form_col">
-                                <input type="text" name="firstnamne" id="firstnamne" placeholder="Förnamn" required>
-                            </div>
-                            <div class="form_col">
-                                <input type="text" name="lastnamn" id="lastnamn" placeholder="Efternamn" required>
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <div class="form_col">
-                                <input type="email" name="Email" id="Email" placeholder="E-mail" required>
-                            </div>
-                            <div class="form_col">
-                                <input type="text" name="phone" id="phone" placeholder="Telefon" >
-                            </div>
-                        </div>
-                        <div class="form_row" name="message" id="message" required>
-                            <textarea type="textarea" rows="4" placeholder="Ditt meddelande"></textarea>
-                        </div>
-                        <div class="form_row">
-                            <input type="submit" value="Skicka">
-                        </div>
-                    </form>
-                </section>
+                <section>
+                    <h4 class="form_header">
+                        Meddelande
+                    </h4>
+               <div class="form_grid">
+                
+                <input type="text" name="firstname" id="firstname" placeholder="Förnamn" required>
+                <input type="text" name="lastnamn" id="lastname" placeholder="Efternamn" required>
+                <input type="email" name="Email" id="Email" placeholder="E-mail" required>
+                <input type="text" name="phone" id="phone" placeholder="Telefon" >
+                <textarea type="textarea" rows="4" id="message" placeholder="Ditt meddelande"></textarea>
+                
+                <input type="submit" value="Skicka" id="send">
+                        
+               </div>
+                
+                
+            </section>
             </div>
         </main>
         <footer>
             <div class="footer-content">
-                <p>Blomsterhörnan AB</p>
-                <p>Slånbärsvägen 123 45</p>
-                <p>123 45 TÄTORT</p>
+              <p>Blomsterhörnan AB</p>
+              <p>Slånbärsvägen 123 45</p>
+              <p>123 45 TÄTORT</p>
             </div>
             <div class="footer-content">
-                <p>Telefon: 123-456 78 90</p>
-                <p>blomsterhornan@mailadress.se</p>
+              <p>Telefon: 123-456 78 90</p>
+              <p>blomsterhornan@mailadress.se</p>
             </div>
-        </footer>
+          </footer>
     </div>
 </body>
 
