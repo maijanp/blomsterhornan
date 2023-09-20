@@ -99,6 +99,7 @@ input[type=submit] {
         grid-column-start: 2;
     
     }
+    
     #email{
     
         grid-row-start: 2;
