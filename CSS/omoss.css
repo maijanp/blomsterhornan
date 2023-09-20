@@ -75,7 +75,7 @@ main{
 @media screen and (min-width: 1025px) {
 
     main{
-        height:630px;  
+        height:800px;  
     }
 
     #about-us-container{
@@ -90,6 +90,7 @@ main{
         padding: 30px;
     
     }
+    
     .image-about-us{
         margin-top: 50px;
         grid-column-start: 3;
