@@ -11,9 +11,11 @@ main{
     
     padding-top: 30px;
     margin: 40px auto;
+    
 
     background-color: var(--light-green);
     box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
+    border-radius: 10px;
 }
 
 /* Om oss sektionen */
@@ -73,7 +75,7 @@ main{
 @media screen and (min-width: 1025px) {
 
     main{
-        height:800px;  
+        height:630px;  
     }
 
     #about-us-container{
