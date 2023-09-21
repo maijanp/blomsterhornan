@@ -1,107 +1,199 @@
 /* mobile first */
 
-main{
-    height:825px;   
-}
+/* Om oss sektionen */
 
 #about-us-container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
-    
-    padding-top: 30px;
-    margin: 40px auto;
-    
 
+    margin: 10px auto;
+}
+
+
+.col-one{
+ 
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    width:90%;
+    padding: 10px;
+    padding-bottom: 15px;
+
+    margin: 7px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
     background-color: var(--light-green);
     box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
     border-radius: 10px;
 }
 
-/* Om oss sektionen */
-.about-us-text{
-    padding: 10px;
-    padding-top: 0;
-    margin-left: 12px;
-    margin-bottom: -10px;
-    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;   
-}
-
-
 .image-about-us{
-   margin: 0 auto;
-   margin-top: 20px;
-    margin-bottom: 15px;
-   width: 250px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    width: 100%;
 
    box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
    border-radius: 10px;
  
 }
+.col-two{
+    grid-column-start: 1;
+    grid-column-end: 5;
 
+    width:90%;
+    padding: 10px;
+    padding-bottom: 15px;
 
+    margin: 7px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    background-color: var(--light-green);
+    box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
+    border-radius: 10px;
+}
+
+.image-about-us2{
+       
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    width: 100%;
+
+   box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
+   border-radius: 10px;}
+
+ 
+
+   .text-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+    background-color: var(--light-green);
+    margin-bottom: 1em;
+    box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
+    -moz-box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
+        border-radius: 6px;
+        font-size: 1.3em;
+}
+
+#insta-icon{
+    margin: auto;
+    width: 15%;
+}
+
+#insta-icon img{
+    width: 80%;
+}
 /* Tablets */
 @media screen and (min-width: 480px) {
 
-    main{
-        height:750px;  
+   
+    #about-us-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 90%;
+
+        column-gap: 30px;
+        margin: 10px auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .col-one{
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
     
     .image-about-us{
-        width: 300px;
-     }
-}
+       
+        grid-column-start: 1;
 
-
-/* landscape tablets */
-@media screen and (min-width: 768px) {
-    main{
-        height:750px;  
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
-    #about-us-container{
-        display: flex;
-        flex-direction: column;
 
-        margin-top: 50px;
+    .col-two{
+        grid-column-start:2;
+        grid-column-end: 3;
+    
     }
-    .image-about-us{
-        width: 400px;
-        margin-bottom: 30px;
-     }
+
+    .image-about-us2{
+    
+        grid-column-start: 2;
+
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
 }
 
 
 /*  Desktops */
 @media screen and (min-width: 1025px) {
 
-    main{
-        height:800px;  
-    }
 
     #about-us-container{
-        width: 80%;
-        min-height: 400px;
-
-        display: grid;
-        grid-template-columns: 1fr 100px 1fr;
-        row-gap: 20px;
-        justify-self: center;
-
-        padding: 30px;
-    
-    }
-    
-    .image-about-us{
-        margin-top: 50px;
-        grid-column-start: 3;
-        width: 90%;
-
+      
+        column-gap: 50px;
+        
     }
 
-    .about-us-text{
-        padding:27px;
-    }
+.col-one{
+ 
+    width:80%;
+    padding: 25px;
+    margin-right: 0;
 }
+ .image-about-us{
+     margin: 0 auto;
+     margin-bottom: 20px;
+     margin-top: 20px;
+}
+.col-two{
+ 
+    width:80%;
+    padding: 25px;
+    margin-left: 0;
+}
+ .image-about-us2{
+     margin: 0 auto;
+     margin-bottom: 20px;
+     margin-top: 20px;
+}
+.text-container{
+    font-size: 1.5rem;
+    flex-direction: row;
+}
+
+#insta-icon{
+    width: 10%;
+    justify-content: center;
+    margin: 0;
+    margin-left: 2em;
+}
+}
+
+ 
+
+  
+
+  
+    
 
 
 
