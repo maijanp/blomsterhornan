@@ -60,22 +60,57 @@ h3 {
     padding: 1em;
     color: var(--dark-green);
     background-color: var(--light-green);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
     -webkit-box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
     -moz-box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
         border-radius: 6px;
-        font-size: 1.3em;
 }
 
-#insta-icon{
-    margin: auto;
-    width: 15%;
+#garanti {
+    font-size: 150%;
 }
 
-#insta-icon img{
-    width: 100%;
+#g-icon {
+    width: 150px;
 }
+
+.genvagar {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    margin: 40px 20px 60px;
+}
+
+button {
+    width: 45%;
+    border-radius: 10px;
+    border: 1px solid var(--light-green);
+    box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.2);
+}
+
+.btn-text {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 150%;
+}
+
+.yta {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    background: url(/Images/gallery7.jpg);
+}
+
+.contact {
+    background: url(/Images/gallery9.jpg);
+}
+
 
 @media screen and (min-width: 480px) {
 
@@ -124,6 +159,20 @@ h3 {
 
     #box-2 {
         align-self: center;
+    }
+
+    .text-container {
+        flex-direction: row;
+        column-gap: 10px;
+        text-align: start;
+    }
+
+    .icon-text {
+        margin-left: 20px;
+    }
+
+    #g-icon {
+        width: 150px;
     }
     
 }
