@@ -24,8 +24,12 @@ h3 {
 }
 
 .main-content {
-    padding: 20px;
     color: var(--dark-green);
+    background-color: var(--white);
+    margin: 80px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.2);
 }
 
 .interior-container {
@@ -37,13 +41,11 @@ h3 {
     padding: 20px;
     background-color: var(--light-green);
     border-radius: 10px;
-    box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
 }
 
 #interior {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28)
 }
 
 @media screen and (min-width: 480px) {
@@ -55,15 +57,18 @@ h3 {
     }
 
     #greeting {
-        width: 100%;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+    }
+
+    #box-1 {
+        width: 45%;
     }
 
     .main-text {
-        width: 40%;
-        padding: 20px;
         background-color: var(--light-green);
         border-radius: 10px;
-        box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
         height: fit-content;
     }
     
