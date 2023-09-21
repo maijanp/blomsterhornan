@@ -19,6 +19,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h3, h4{
+  font-family: 'Raleway', sans-serif;
+}
+
 .container {
   margin: 0 auto;
   display: flex;
