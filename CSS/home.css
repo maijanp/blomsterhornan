@@ -53,17 +53,14 @@ h3 {
     .main-content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        row-gap: 20px;
     }
 
     #greeting {
         display: inline-block;
         display: flex;
         justify-content: center;
-    }
-
-    #box-1 {
-        width: 45%;
     }
 
     .main-text {
@@ -83,4 +80,20 @@ h3 {
         width: 200px;
     }
 
+}
+
+@media screen and (min-width: 768px) {
+
+    #box-1 {
+        width: 45%;
+    }
+
+    .main-content {
+        column-gap: 20px;
+    }
+
+    #box-2 {
+        align-self: center;
+    }
+    
 }
