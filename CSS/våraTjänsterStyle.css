@@ -11,7 +11,7 @@ h3 {
 .grid-wedding,
 .grid-funeral,
 .grid-floralArrangement {
-    background-color: var(--ashgrey);
+    background-color: var(--light-green);
     margin: 20px auto;
     width: 80%;
     border-radius: 10px;
