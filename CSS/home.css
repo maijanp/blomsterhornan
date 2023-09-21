@@ -26,7 +26,8 @@ h3 {
 .main-content {
     color: var(--dark-green);
     background-color: var(--white);
-    margin: 80px 20px;
+    margin: 60px 20px;
+    margin-bottom: 40px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.2);
@@ -46,6 +47,34 @@ h3 {
 #interior {
     width: 100%;
     border-radius: 10px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+    color: var(--dark-green);
+    background-color: var(--light-green);
+    margin-bottom: 60px;
+    box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
+    -moz-box-shadow: 11px 11px 14px -5px rgba(0,0,0,0.28);
+        border-radius: 6px;
+        font-size: 1.3em;
+}
+
+#insta-icon{
+    margin: auto;
+    width: 15%;
+}
+
+#insta-icon img{
+    width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -90,6 +119,7 @@ h3 {
 
     .main-content {
         column-gap: 20px;
+        justify-content: space-evenly;
     }
 
     #box-2 {
