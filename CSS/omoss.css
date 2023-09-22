@@ -10,7 +10,7 @@
     margin: 10px auto;
 }
 
-.col-one{
+.col-one, .col-two{
  
     grid-column-start: 1;
     grid-column-end: 5;
@@ -28,7 +28,7 @@
     border-radius: 10px;
 }
 
-.image-about-us{
+.image-about-us, .image-about-us2{
 
     margin: 0 auto;
     margin-top: 20px;
@@ -40,35 +40,7 @@
  
 }
 
-.col-two{
-    grid-column-start: 1;
-    grid-column-end: 5;
-
-    width:90%;
-    padding: 10px;
-    padding-bottom: 15px;
-
-    margin: 7px auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-    background-color: var(--light-green);
-    box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
-    border-radius: 10px;
-}
-
-.image-about-us2{
-       
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 2px;
-    width: 100%;
-
-   box-shadow: 10px 10px 15px -3px rgba(120, 119, 119, 0.28);
-   border-radius: 10px;
-}
-
-   .text-container{
+.text-container{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -148,36 +120,24 @@
 @media screen and (min-width: 1025px) {
 
 
-    #about-us-container{
+#about-us-container{
       
     column-gap: 50px;
-    }
+ }
 
-.col-one{
+.col-one, .col-two{
  
     width:80%;
     padding: 25px;
     margin-right: 0;
 }
 
- .image-about-us{
+ .image-about-us, .image-about-us2{
      margin: 0 auto;
      margin-bottom: 20px;
      margin-top: 20px;
 }
 
-.col-two{
- 
-    width:80%;
-    padding: 25px;
-    margin-left: 0;
-}
-
- .image-about-us2{
-     margin: 0 auto;
-     margin-bottom: 20px;
-     margin-top: 20px;
-}
 
 .text-container{
     font-size: 1.5rem;
